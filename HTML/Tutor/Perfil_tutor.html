@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Perfil</title>
+
+    <link rel="stylesheet" href="./Perfil_tutor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- MENÚ LATERAL -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="../../Assets/Logo-Utez.png" alt="Logo UTEZ">
+        </div>
+
+        <div class="user-card">
+            <img src="../../Assets/user_image.png" alt="Usuario">
+
+            <h2>Tutor</h2>
+            <p>Docente</p>
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="./Tutor_inicio.html">
+                        <i class="fa-solid fa-house"></i>
+                        Inicio
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="#">
+                        <i class="fa-regular fa-user"></i>
+                        Mi perfil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./mensajes.html">
+                        <i class="fa-regular fa-message"></i>
+                        Mensajes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./Tutorias.html">
+                        <i class="fa-regular fa-calendar"></i>
+                        Mis tutorías
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./Grupos.html">
+                        <i class="fa-solid fa-users"></i>
+                        Mis grupos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./Historial.html">
+                        <i class="fa-regular fa-file-lines"></i>
+                        Historial
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./salir.html" onclick="abrirModal()">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Salir
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+    <!-- CONTENIDO -->
+
+    <main class="main">
+
+        <h1 class="title">Mi Perfil</h1>
+
+        <p class="subtitle">
+            Información del tutor
+        </p>
+
+        <div class="profile-wrapper">
+
+            <!-- TARJETA IZQUIERDA -->
+
+            <div class="profile-card">
+
+                <div class="profile-image">
+
+                    <img src="../../Assets/user_image.png" alt="Tutor">
+
+                </div>
+
+                <button class="edit-btn">
+
+                    Editar Perfil
+
+                </button>
+
+            </div>
+
+            <!-- INFORMACIÓN -->
+
+            <div class="profile-info">
+
+                <div class="info-box">
+
+                    <span class="info-label">
+                        Nombre:
+                    </span>
+
+                    <span class="info-value">
+                        Tutor Genérico
+                    </span>
+
+                </div>
+
+                <div class="info-box">
+
+                    <span class="info-label">
+                        Correo:
+                    </span>
+
+                    <span class="info-value">
+                        20253DS000@utez.edu.mx
+                    </span>
+
+                </div>
+
+                <div class="info-box">
+
+                    <span class="info-label">
+                        División Académica:
+                    </span>
+
+                    <span class="info-value">
+                        DATID
+                    </span>
+
+                </div>
+
+                <div class="info-box">
+
+                    <span class="info-label">
+                        Teléfono:
+                    </span>
+
+                    <span class="info-value">
+                        777 144 5262
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CAMBIAR CONTRASEÑA -->
+
+       <div class="password-box"
+     onclick="window.location.href='../Contraseñas/cambiar_contra.html'">
+
+    <div class="password-left">
+        <i class="fa-solid fa-right-left"></i>
+        <span>Cambiar contraseña</span>
+    </div>
+
+    <i class="fa-solid fa-chevron-right"></i>
+
+</div>
+
+    </main>
+
+</div>
+
+<!-- MODAL -->
+
+<div id="logoutModal" class="logout-modal">
+
+    <div class="logout-box">
+
+        <i class="fa-solid fa-right-from-bracket logout-icon"></i>
+
+        <div class="logout-message">
+
+            Tu sesión se cerrará de forma segura
+
+        </div>
+
+        <button class="logout-btn" onclick="cerrarSesion()">
+
+            Cerrar Sesión
+
+        </button>
+
+        <button class="cancel-btn" onclick="cerrarModal()">
+
+            Cancelar y regresar
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="../JS modal/modal.js"></script>
+
+</body>
+
+</html>

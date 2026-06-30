@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reportes</title>
+
+    <link rel="stylesheet" href="./reportes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="../../Assets/Logo-Utez.png" alt="">
+        </div>
+
+        <div class="user-card">
+            <img src="../../Assets/user_image.png" alt="">
+            <h2>Laura Martínez</h2>
+            <p>Coordinador</p>
+        </div>
+
+        <nav>
+            <ul>
+
+                <li>
+                    <a href="./Inicio.html">
+                        <i class="fa-solid fa-house"></i>
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./perfil.html">
+                        <i class="fa-regular fa-user"></i>
+                        Mi perfil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./tutores.html">
+                        <i class="fa-regular fa-message"></i>
+                        Tutores
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./grupos.html">
+                        <i class="fa-solid fa-users"></i>
+                        Grupos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./asignaciones.html">
+                        <i class="fa-regular fa-clipboard"></i>
+                        Asignaciones
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="#">
+                       <i class="fa-regular fa-file-lines"></i>
+                        Reportes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./salir.html">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        Salir
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </aside>
+
+    <main class="main">
+
+        <h1 class="title">Reportes</h1>
+
+        <div class="top-bar">
+
+            <div class="dates">
+
+                <div class="date-group">
+                    <label>Desde</label>
+                    <input type="date" value="2025-04-01">
+                </div>
+
+                <div class="date-group">
+                    <label>Hasta</label>
+                    <input type="date" value="2025-04-01">
+                </div>
+
+            </div>
+
+            <button class="report-btn">
+                + Crear reporte
+            </button>
+
+        </div>
+
+        <section class="cards">
+
+            <div class="card">
+                <h2>360</h2>
+                <span>Alumnos</span>
+            </div>
+
+            <div class="card">
+                <h2>80</h2>
+                <span>Tutorías realizadas</span>
+            </div>
+
+            <div class="card">
+                <h2>15</h2>
+                <span>Cancelaciones</span>
+            </div>
+
+            <div class="card">
+                <h2>95%</h2>
+                <span>Asistencia promedio</span>
+            </div>
+
+        </section>
+
+        <h2 class="table-title">
+            Tutorías por tutor
+        </h2>
+
+        <div class="table-box">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Tutor</th>
+                        <th>Tutorías</th>
+                        <th>Alumnos</th>
+                        <th>Asistencias</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>José Reyes</td>
+                        <td>28</td>
+                        <td>30</td>
+                        <td>30</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ana López</td>
+                        <td>16</td>
+                        <td>32</td>
+                        <td>20</td>
+                    </tr>
+
+                    <tr>
+                        <td>Carlos Hernández</td>
+                        <td>15</td>
+                        <td>25</td>
+                        <td>27</td>
+                    </tr>
+
+                    <tr>
+                        <td>María González</td>
+                        <td>25</td>
+                        <td>40</td>
+                        <td>26</td>
+                    </tr>
+
+                    <tr>
+                        <td>Benjamín Álvarez</td>
+                        <td>20</td>
+                        <td>27</td>
+                        <td>15</td>
+                    </tr>
+
+                    <tr>
+                        <td>Estela Díaz</td>
+                        <td>22</td>
+                        <td>20</td>
+                        <td>45</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="table-footer">
+
+            <span>
+                Mostrando 1-6 de 12 registros
+            </span>
+
+            <div class="pagination">
+
+                <button class="current">1</button>
+                <button>2</button>
+                <button>3</button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

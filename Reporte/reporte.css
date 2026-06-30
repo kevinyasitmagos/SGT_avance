@@ -1,0 +1,532 @@
+/*====================================
+        CONFIGURACIÓN DEL REPORTE
+=====================================*/
+
+#contenedorReporte{
+
+    position:absolute;
+    left:-99999px;
+    top:0;
+
+}
+
+#reporte,
+#reporte *{
+
+    box-sizing:border-box;
+    font-family:"Segoe UI",Arial,sans-serif;
+
+}
+
+#reporte{
+
+    width:185mm;
+
+    min-height:277mm;
+
+    margin:0 auto;
+
+    background:#fff;
+    color:#222;
+
+    padding:18mm;
+
+    box-shadow:none;
+
+}
+
+/*====================================
+            ENCABEZADO
+=====================================*/
+
+#reporte .encabezado{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    gap:8px;
+
+    padding-bottom:16px;
+    margin-bottom:20px;
+
+    border-bottom:2px solid #d7d7d7;
+
+}
+
+#reporte .logo img{
+
+    width:200px;
+    height:auto;
+
+}
+
+#reporte .titulo{
+
+    text-align:center;
+
+}
+
+#reporte .titulo h1{
+
+    margin:0;
+
+    font-size:24px;
+    color:#006C45;
+
+    font-weight:700;
+    letter-spacing:.5px;
+
+}
+
+#reporte .titulo p{
+
+    margin-top:4px;
+
+    font-size:13px;
+    color:#666;
+
+}
+
+#reporte hr{
+
+    display:none;
+
+}
+
+/*====================================
+        INFORMACIÓN GENERAL
+=====================================*/
+
+#reporte .informacion{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px 18px;
+
+    margin-bottom:24px;
+
+}
+
+#reporte .info{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+#reporte .info label{
+
+    font-size:11px;
+
+    color:#666;
+
+    margin-bottom:4px;
+
+    text-transform:uppercase;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+}
+
+#reporte .info span{
+
+    border:1px solid #d8d8d8;
+
+    border-radius:6px;
+
+    background:#fafafa;
+
+    padding:8px 10px;
+
+    font-size:13px;
+
+    font-weight:500;
+
+}
+
+/*====================================
+            SECCIONES
+=====================================*/
+
+#reporte .seccion{
+
+    margin-bottom:24px;
+
+}
+
+#reporte .seccion h2{
+
+    color:#006C45;
+
+    font-size:17px;
+
+    margin-bottom:10px;
+
+    padding-left:10px;
+
+    border-left:5px solid #006C45;
+
+    font-weight:700;
+
+}
+
+/*====================================
+                TABLA
+=====================================*/
+
+#reporte table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:8px;
+
+}
+
+#reporte thead{
+
+    background:#006C45;
+
+    color:#fff;
+
+}
+
+#reporte th{
+
+    padding:9px 10px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    text-align:center;
+
+    border:1px solid #d6d6d6;
+
+}
+
+#reporte td{
+
+    padding:8px 10px;
+
+    font-size:12px;
+
+    border:1px solid #e1e1e1;
+
+    vertical-align:middle;
+
+}
+
+#reporte tbody tr:nth-child(even){
+
+    background:#fafafa;
+
+}
+
+#reporte tbody tr:hover{
+
+    background:#f4faf7;
+
+}
+
+#reporte td:first-child{
+
+    width:55px;
+
+    text-align:center;
+
+}
+
+#reporte td:last-child{
+
+    text-align:center;
+
+}
+
+/*====================================
+        RESUMEN
+=====================================*/
+
+#reporte .resumen{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:14px;
+
+}
+
+#reporte .card{
+
+    flex:1;
+
+    background:#fafafa;
+
+    border:1px solid #dddddd;
+
+    border-radius:8px;
+
+    padding:14px 10px;
+
+    text-align:center;
+
+}
+
+#reporte .card h3{
+
+    margin:0 0 8px;
+
+    font-size:13px;
+
+    color:#666;
+
+    font-weight:600;
+
+}
+
+#reporte .card span{
+
+    display:block;
+
+    font-size:24px;
+
+    color:#006C45;
+
+    font-weight:700;
+
+}
+
+/*====================================
+        TEMAS Y OBSERVACIONES
+=====================================*/
+
+#reporte .texto{
+
+    background:#fafafa;
+
+    border:1px solid #dddddd;
+
+    border-radius:8px;
+
+    min-height:80px;
+
+    padding:12px 14px;
+
+    font-size:13px;
+
+    color:#333;
+
+    line-height:1.5;
+
+    text-align:justify;
+
+    white-space:pre-wrap;
+
+    word-break:break-word;
+
+}
+
+#reporte .texto p{
+
+    margin:0;
+
+}
+
+/*====================================
+        ETIQUETAS DE ESTADO
+=====================================*/
+
+#reporte .estado{
+
+    display:inline-block;
+
+    padding:5px 10px;
+
+    border-radius:20px;
+
+    font-size:11px;
+
+    font-weight:700;
+
+}
+
+#reporte .estado.presente{
+
+    background:#e9f8ef;
+
+    color:#0a8d4f;
+
+}
+
+#reporte .estado.falta{
+
+    background:#fdeaea;
+
+    color:#c62828;
+
+}
+
+#reporte .estado.justificado{
+
+    background:#fff5d8;
+
+    color:#cc8a00;
+
+}
+
+/*====================================
+        DATOS DE GENERACIÓN
+=====================================*/
+
+#reporte .datos-generacion{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:28px;
+
+    padding-top:12px;
+
+    border-top:1px solid #d9d9d9;
+
+    font-size:12px;
+
+    color:#666;
+
+}
+
+#reporte .datos-generacion strong{
+
+    color:#222;
+
+    font-weight:600;
+
+}
+
+/*====================================
+            PIE DE PÁGINA
+=====================================*/
+
+#reporte footer{
+
+    margin-top:24px;
+
+    padding-top:12px;
+
+    border-top:2px solid #006C45;
+
+    text-align:center;
+
+}
+
+#reporte footer p{
+
+    margin:2px 0;
+
+}
+
+#reporte footer p:first-child{
+
+    color:#006C45;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+#reporte footer p:last-child{
+
+    color:#777;
+
+    font-size:11px;
+
+}
+
+/*====================================
+        AJUSTES DE IMPRESIÓN
+=====================================*/
+
+@page{
+
+    size:A4 portrait;
+
+    margin:10mm;
+
+}
+
+@media print{
+
+    body{
+
+        margin:0;
+
+        padding:0;
+
+        background:#fff;
+
+    }
+
+    #contenedorReporte{
+
+        position:static !important;
+
+        left:auto !important;
+
+        top:auto !important;
+
+    }
+
+        #reporte{
+
+        width:185mm;
+
+        min-height:auto;
+
+        margin:0 auto;
+
+        padding:18mm;
+
+        box-shadow:none;
+
+        page-break-after:avoid;
+
+    }
+
+    .seccion{
+
+        page-break-inside:avoid;
+
+    }
+
+    table{
+
+        page-break-inside:auto;
+
+    }
+
+    tr{
+
+        page-break-inside:avoid;
+
+    }
+
+    td,
+    th{
+
+        page-break-inside:avoid;
+
+    }
+
+}

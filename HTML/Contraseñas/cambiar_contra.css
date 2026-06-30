@@ -1,0 +1,474 @@
+/*==============================
+    RESET
+==============================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:#F5F7FA;
+}
+
+
+/*==============================
+    CONTENEDOR
+==============================*/
+
+.container{
+    display:grid;
+    grid-template-columns:420px 1fr;
+    min-height:100vh;
+}
+
+
+/*==============================
+    PANEL IZQUIERDO
+==============================*/
+
+.left-panel{
+
+    position:relative;
+
+    background-image:url("../../Assets/Fondo-menu.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    overflow:hidden;
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.05);
+
+}
+
+.logo{
+
+    width:355px;
+
+    margin-top:70px;
+
+    position:relative;
+
+    z-index:2;
+}
+
+
+/*==============================
+    PANEL DERECHO
+==============================*/
+
+.right-panel{
+
+    position:relative;
+
+    background:#fff;
+
+    padding:45px 90px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    overflow:auto;
+}
+
+
+/*==============================
+    REGRESAR
+==============================*/
+
+.back{
+
+    text-decoration:none;
+
+    color:#0B8A53;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:30px;
+
+}
+
+.back:hover{
+
+    color:#06693F;
+
+}
+
+
+/*==============================
+    TITULO
+==============================*/
+
+.titulo{
+
+    text-align:center;
+
+    margin-bottom:45px;
+
+}
+
+.icon-circle{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    margin-bottom:25px;
+
+    border-radius:50%;
+
+    background:#DDF6EA;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.icon-circle i{
+
+    color:#0B8A53;
+
+    font-size:40px;
+
+}
+
+.titulo h1{
+
+    font-size:52px;
+
+    color:#1F2D3D;
+
+    margin-bottom:15px;
+
+}
+
+.titulo p{
+
+    font-size:22px;
+
+    color:#687280;
+
+    line-height:1.5;
+
+}
+
+
+/*==============================
+    FORMULARIO
+==============================*/
+
+form{
+
+    width:100%;
+
+    max-width:760px;
+
+    margin:auto;
+
+}
+
+.campo{
+
+    margin-bottom:25px;
+
+}
+
+label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#2C3E50;
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+
+/*==============================
+    INPUT
+==============================*/
+
+.input{
+
+    height:68px;
+
+    background:#fff;
+
+    border:1px solid #D7DDE4;
+
+    border-radius:14px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 18px;
+
+    box-shadow:0 4px 14px rgba(0,0,0,.05);
+
+    transition:.25s;
+
+}
+
+.input:focus-within{
+
+    border-color:#0B8A53;
+
+    box-shadow:0 0 0 4px rgba(11,138,83,.10);
+
+}
+
+.input i{
+
+    font-size:20px;
+
+    color:#5F6772;
+
+}
+
+.input input{
+
+    flex:1;
+
+    height:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    padding:0 18px;
+
+    font-size:18px;
+
+    color:#2C3E50;
+
+}
+
+.input input::placeholder{
+
+    color:#9AA3AD;
+
+}
+
+.toggle{
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.toggle:hover{
+
+    color:#0B8A53;
+
+}
+
+
+/*==============================
+    RECOMENDACIONES
+==============================*/
+
+.tips{
+
+    margin-top:20px;
+
+    padding:22px;
+
+    border-radius:16px;
+
+    background:#F3FAF6;
+
+    display:flex;
+
+    gap:22px;
+
+    align-items:flex-start;
+
+    border-left:5px solid #0B8A53;
+
+}
+
+.shield{
+
+    font-size:40px;
+
+    color:#0B8A53;
+
+}
+
+.tips h3{
+
+    color:#0B8A53;
+
+    margin-bottom:12px;
+
+    font-size:24px;
+
+}
+
+.tips ul{
+
+    padding-left:20px;
+
+    line-height:2;
+
+    color:#495057;
+
+    font-size:17px;
+
+}
+
+
+/*==============================
+    BOTON
+==============================*/
+
+button{
+
+    width:100%;
+
+    margin-top:35px;
+
+    height:68px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:#0B8A53;
+
+    color:#fff;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+button:hover{
+
+    background:#087447;
+
+    transform:translateY(-2px);
+
+}
+
+
+/*==============================
+    RESPONSIVE
+==============================*/
+
+@media(max-width:1100px){
+
+    .container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .left-panel{
+
+        display:none;
+
+    }
+
+    .right-panel{
+
+        padding:40px;
+
+    }
+
+    .titulo h1{
+
+        font-size:40px;
+
+    }
+
+    .titulo p{
+
+        font-size:18px;
+
+    }
+
+}
+
+@media(max-width:650px){
+
+    .right-panel{
+
+        padding:25px;
+
+    }
+
+    .titulo h1{
+
+        font-size:32px;
+
+    }
+
+    .back{
+
+        font-size:18px;
+
+    }
+
+    .tips{
+
+        flex-direction:column;
+
+    }
+
+    button{
+
+        font-size:18px;
+
+    }
+
+}

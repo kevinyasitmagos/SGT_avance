@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mis grupos</title>
+
+    <link rel="stylesheet" href="./Grupos.css">
+    <link rel="stylesheet" href="../../Reporte/reporte.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<button class="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+</button>
+
+<div class="overlay"></div>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="close-menu">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="logo">
+            <img src="../../Assets/Logo-Utez.png" alt="Logo UTEZ">
+        </div>
+
+        <div class="user-card">
+            <img src="../../Assets/user_image.png" alt="Tutor">
+            <h2 id="nombreTutor">Tutor</h2>
+            <p>Docente</p>
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="./Tutor_inicio.html">
+                        <i class="fa-solid fa-house"></i>
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./Perfil_tutor.html">
+                        <i class="fa-regular fa-user"></i>
+                        Mi perfil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./mensajes.html">
+                        <i class="fa-regular fa-message"></i>
+                        Mensajes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./Tutorias.html">
+                        <i class="fa-regular fa-calendar"></i>
+                        Mis tutorías
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="#">
+                        <i class="fa-solid fa-users"></i>
+                        Mis grupos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./Historial.html">
+                        <i class="fa-regular fa-file-lines"></i>
+                        Historial
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./salir.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Salir
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+    <main class="main">
+
+        <section class="page">
+
+            <div class="header">
+                <h1>Mis grupos</h1>
+                <p>Consulta información de tus grupos</p>
+            </div>
+
+            <h2 class="section-title">
+
+                Mis grupos de tutoría
+
+            </h2>
+
+            <div class="filters">
+
+                <div class="filter">
+
+                    <label>Grupo</label>
+
+                    <select id="grupo">
+
+                        <option>Grupo A</option>
+                        <option>Grupo B</option>
+                        <option>Grupo C</option>
+
+                    </select>
+
+                </div>
+
+                <div class="filter">
+
+                    <label>Cuatrimestre</label>
+
+                    <select id="cuatrimestre">
+
+                        <option>Cuatrimestre 1</option>
+                        <option>Cuatrimestre 2</option>
+                        <option>Cuatrimestre 3</option>
+
+                    </select>
+
+                </div>
+
+                <div class="filter">
+
+                    <label>Carrera</label>
+
+                    <select id="carrera">
+
+                        <option>Redes Digitales</option>
+                        <option>Mecatrónica</option>
+                        <option>Terapia Física</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <section class="list-panel">
+
+                    <div class="panel-title">
+                        <h3>Pase de Lista</h3>
+                    </div>
+
+                    <div class="table-container">
+
+                        <table id="tablaAsistencia">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Fecha</th>
+                                    <th>Nombre</th>
+                                    <th>Asistencia</th>
+                                    <th>Falta</th>
+                                    <th>Justificación</th>
+                                    <th></th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                                                <tr>
+
+                                    <td>20/05/25</td>
+
+                                    <td>Juan Pérez</td>
+
+                                    <td>
+                                        <input type="checkbox" class="presente" checked>
+                                    </td>
+
+                                    <td>
+                                        <input type="checkbox" class="falta">
+                                    </td>
+
+                                    <td>
+                                        <input type="checkbox" class="justificado">
+                                    </td>
+
+                                    <td>
+
+                                        <button class="expand">
+
+                                            <i class="fa-solid fa-chevron-up"></i>
+
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>20/05/25</td>
+
+                                    <td>María López</td>
+
+                                    <td>
+                                        <input type="checkbox" class="presente" checked>
+                                    </td>
+
+                                    <td>
+                                        <input type="checkbox" class="falta">
+                                    </td>
+
+                                    <td>
+                                        <input type="checkbox" class="justificado">
+                                    </td>
+
+                                    <td></td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>20/05/25</td>
+
+                                    <td>Carlos Ruiz</td>
+
+                                    <td>
+                                        <input type="checkbox" class="presente">
+                                    </td>
+
+                                    <td>
+                                        <input type="checkbox" class="falta" checked>
+                                    </td>
+
+                                    <td>
+                                        <input type="checkbox" class="justificado">
+                                    </td>
+
+                                    <td></td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>20/05/25</td>
+
+                                    <td>Ana García</td>
+
+                                    <td>
+                                        <input type="checkbox" class="presente">
+                                    </td>
+
+                                    <td>
+                                        <input type="checkbox" class="falta">
+                                    </td>
+
+                                    <td>
+                                        <input type="checkbox" class="justificado" checked>
+                                    </td>
+
+                                    <td></td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+                <!--==========================
+                        BITÁCORA
+                ===========================-->
+
+                <aside class="bitacora-panel">
+
+                    <div class="bitacora-content">
+
+                        <h2>
+
+                            Bitácora de Tutoría
+
+                        </h2>
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Fecha de la sesión
+
+                            </label>
+
+                            <div class="date-input">
+
+                                <input
+                                    id="fechaSesion"
+                                    type="date"
+                                    value="2025-05-20">
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Temas tratados
+
+                            </label>
+
+                            <textarea
+                                id="temas"
+                                rows="6"
+                                placeholder="Escribe los temas tratados..."></textarea>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>
+
+                                Observaciones y seguimiento
+
+                            </label>
+
+                            <textarea
+                                id="observaciones"
+                                rows="6"
+                                placeholder="Escribe observaciones..."></textarea>
+
+                        </div>
+
+                        <button
+                            class="btn-save"
+                            id="btnReporte">
+
+                            Guardar Bitácora
+
+                        </button>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<!--=========================================
+        REPORTE PDF (OCULTO)
+==========================================-->
+
+<div id="contenedorReporte"
+     style="position:absolute;
+            left:-99999px;
+            top:0;">
+
+    <div id="reporte">
+
+            <!--==============================
+            ENCABEZADO
+    ==============================-->
+
+    <header class="encabezado">
+
+        <div class="logo">
+
+            <img src="../../Assets/Logo-Utez-color.png" alt="Logo UTEZ">
+
+        </div>
+
+        <div class="titulo">
+
+            <h1>REPORTE DE TUTORÍA</h1>
+
+            <p>Sistema Institucional de Tutorías</p>
+
+        </div>
+
+    </header>
+
+    <hr>
+
+    <!--==============================
+        INFORMACIÓN GENERAL
+    ==============================-->
+
+    <section class="informacion">
+
+        <div class="info">
+
+            <label>Tutor</label>
+
+            <span id="pdfTutor">
+
+                Tutor
+
+            </span>
+
+        </div>
+
+        <div class="info">
+
+            <label>Fecha de sesión</label>
+
+            <span id="pdfFecha">
+
+                --
+
+            </span>
+
+        </div>
+
+        <div class="info">
+
+            <label>Grupo</label>
+
+            <span id="pdfGrupo">
+
+                --
+
+            </span>
+
+        </div>
+
+        <div class="info">
+
+            <label>Cuatrimestre</label>
+
+            <span id="pdfCuatrimestre">
+
+                --
+
+            </span>
+
+        </div>
+
+        <div class="info">
+
+            <label>Carrera</label>
+
+            <span id="pdfCarrera">
+
+                --
+
+            </span>
+
+        </div>
+
+        <div class="info">
+
+            <label>Reporte No.</label>
+
+            <span id="pdfReporte">
+
+                REP-00001
+
+            </span>
+
+        </div>
+
+    </section>
+
+    <!--==============================
+        PASE DE LISTA
+    ==============================-->
+
+    <section class="seccion">
+
+        <h2>
+
+            Pase de Lista
+
+        </h2>
+
+        <table id="tablaReporte">
+
+            <thead>
+
+                <tr>
+
+                    <th>No.</th>
+
+                    <th>Alumno</th>
+
+                    <th>Asistencia</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="pdfTabla">
+
+                <!-- El JS agregará las filas -->
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+        <!--==============================
+        RESUMEN
+    ==============================-->
+
+    <section class="seccion">
+
+        <h2>
+
+            Resumen de Asistencia
+
+        </h2>
+
+        <div class="resumen">
+
+            <div class="card">
+
+                <h3>
+
+                    Presentes
+
+                </h3>
+
+                <span id="pdfPresentes">
+
+                    0
+
+                </span>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Faltas
+
+                </h3>
+
+                <span id="pdfFaltas">
+
+                    0
+
+                </span>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Justificados
+
+                </h3>
+
+                <span id="pdfJustificados">
+
+                    0
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--==============================
+        TEMAS TRATADOS
+    ==============================-->
+
+    <section class="seccion">
+
+        <h2>
+
+            Temas tratados durante la sesión
+
+        </h2>
+
+        <div class="texto">
+
+            <p id="pdfTemas">
+
+                Sin información.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!--==============================
+        OBSERVACIONES
+    ==============================-->
+
+    <section class="seccion">
+
+        <h2>
+
+            Observaciones y seguimiento
+
+        </h2>
+
+        <div class="texto">
+
+            <p id="pdfObservaciones">
+
+                Sin observaciones.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!--==============================
+        DATOS DE GENERACIÓN
+    ==============================-->
+
+    <section class="datos-generacion">
+
+        <div>
+
+            <strong>Reporte generado:</strong>
+
+            <span id="pdfFechaGeneracion">
+
+                --
+
+            </span>
+
+        </div>
+
+        <div>
+
+            <strong>Hora:</strong>
+
+            <span id="pdfHora">
+
+                --
+
+            </span>
+
+        </div>
+
+    </section>
+
+        <!--==============================
+            PIE DE PÁGINA
+    ==============================-->
+
+    <footer>
+
+        <p>
+
+            Universidad Tecnológica Emiliano Zapata del Estado de Morelos
+
+        </p>
+
+        <p>
+
+            Sistema Institucional de Tutorías
+
+        </p>
+
+    </footer>
+
+</div>
+
+</div>
+
+<!--==============================
+        LIBRERÍAS
+===============================-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<script src="../../Reporte/reporte.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+    user-select: none;
+
+}
+
+#et {
+    color: #138C69;
+}
+html,
+body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.container{
+    position:relative;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        rgba(0,125,84,.80),
+        rgba(0,72,60,.88)
+    ),
+    url("./Assets/edificio.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.container::before{
+    content:"";
+
+    top:40px;
+    left:40px;
+
+    width:140px;
+    height:140px;
+
+    background-image:
+    radial-gradient(
+        rgba(255,255,255,.35) 1px,
+        transparent 1px
+    );
+
+    background-size:12px 12px;
+}
+
+.container::after{
+    content:"";
+
+
+    right:-180px;
+    top:-50px;
+
+    width:600px;
+    height:600px;
+
+    background:rgba(255,255,255,.04);
+
+    transform:rotate(45deg);
+}
+
+.logo-section{
+    position:absolute;
+    top:30px;
+    left:50%;
+    transform:translateX(-50%);
+
+    text-align:center;
+    color:white;
+    z-index:5;
+}
+
+.logo-section img{
+    width:360px;
+}
+
+.center-content{
+    position:absolute;
+
+    top:52%;
+    left:50%;
+
+    transform:translate(-50%, -50%);
+
+    text-align:center;
+    z-index:5;
+}
+
+.title h1{
+    color:white;
+    font-size:60px;
+    font-weight:700;
+    
+}
+
+.line{
+    width:70px;
+    height:3px;
+
+    background:white;
+
+    margin:50px auto 0;
+}
+
+.menu{
+    width:420px;
+    margin-top:500px;
+    align-items: center;
+    margin:0 auto;
+
+}
+
+
+.btn{
+    width:100%;
+    height:60px;
+
+    border:none;
+    border-radius:8px;
+
+    background:white;
+
+    display:flex;
+    justify-content:center; 
+    align-items:center;     
+
+    position:relative;
+    margin-bottom:14px;
+
+    font-size:18px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+a{
+     text-decoration: none;
+    color: black;
+}
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+
+
+.icon{
+    position:absolute;
+    left:16px;
+
+    width:40px;
+    height:40px;
+
+    background:#00784b;
+    color:white;
+
+    border-radius:8px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:18px;
+}
+
+
+.footer-wave{
+    position:absolute;
+
+    bottom:-180px;
+    left:-10%;
+
+    width:120%;
+    height:300px;
+
+    background:#0b2f78;
+
+    border-radius:50% 50% 0 0;
+
+    z-index:1;
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+
+    padding-top:55px;
+}
+
+.footer-wave p{
+    color:white;
+    text-align:center;
+    font-size:20px;
+    font-weight:600;
+    line-height:1.4;
+}
+
+
+
+@media(max-width:768px){
+
+    .logo-section img{
+        width:360px;
+    }
+
+    .logo-section p{
+        font-size:10px;
+    }
+
+    .title h1{
+        font-size:38px;
+    }
+
+    .menu{
+        width:90vw;
+        max-width:380px;
+    }
+
+    .btn{
+        height:55px;
+        font-size:16px;
+    }
+
+    .footer-wave{
+        height:250px;
+        bottom:-150px;
+    }
+
+    .footer-wave p{
+        font-size:14px;
+    }
+}
+

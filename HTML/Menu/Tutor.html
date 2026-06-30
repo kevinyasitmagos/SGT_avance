@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inicio de sesión - Tutor</title>
+
+    <link rel="stylesheet" href="./login.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="login-box">
+
+        <img src="../../Assets/Logo-Utez-color.png" class="logo">
+
+        <div class="icon-user">
+            <i class="fa-solid fa-book"></i>
+        </div>
+
+        <h1>
+            Sistema de <br>
+            <span>Gestión de Tutorías</span>
+        </h1>
+
+        <h2>Inicio de sesión - Tutor</h2>
+
+        <div class="input-box">
+
+            <i class="fa-regular fa-envelope"></i>
+
+            <input
+            id="correoLogin"
+            type="email"
+            placeholder="Correo institucional">
+
+        </div>
+
+        <small
+        id="errorCorreoLogin"
+        style="display:none;color:#d62828;font-size:13px;margin-top:6px;">
+            Ingrese un correo institucional UTEZ (@utez.edu.mx).
+        </small>
+
+        <div class="input-box">
+
+            <i class="fa-solid fa-lock"></i>
+
+            <input
+            id="password"
+            type="password"
+            placeholder="Contraseña">
+
+            <i id="togglePassword" class="fa-solid fa-eye-slash"></i>
+
+        </div>
+
+        <a href="#" class="link" id="abrirRecuperacion">
+            ¿Olvidaste tu contraseña?
+        </a>
+
+        <a href="../Tutor/Tutor_inicio.html" class="btn-login">
+            Iniciar sesión
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- MODAL RECUPERACIÓN DE CONTRASEÑA -->
+<!-- ===================================================== -->
+
+<div class="overlay" id="overlayRecuperacion">
+
+    <div class="modal-recuperacion">
+
+        <button
+        class="cerrar-modal"
+        id="cerrarRecuperacion">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+        <!-- ===================== -->
+        <!-- PASO 1 -->
+        <!-- ===================== -->
+
+        <div id="paso1">
+
+            <div class="modal-icono">
+
+                <i class="fa-solid fa-lock"></i>
+
+            </div>
+
+            <h2>
+
+                Recuperación de
+                <span>Contraseña</span>
+
+            </h2>
+
+            <p class="modal-texto">
+
+                Ingresa tu correo institucional y te enviaremos un enlace para restablecer tu contraseña.
+
+            </p>
+
+            <label>
+
+                Correo institucional
+
+            </label>
+
+            <div class="input-modal">
+
+                <i class="fa-regular fa-envelope"></i>
+
+                <input
+                id="correoRecuperacion"
+                type="email"
+                placeholder="correo@utez.edu.mx">
+
+            </div>
+
+            <small
+            id="errorCorreoRecuperacion"
+            style="display:none;color:#d62828;font-size:13px;margin-top:6px;">
+                Ingrese un correo institucional UTEZ (@utez.edu.mx).
+            </small>
+
+            <button
+            class="btn-enviar"
+            id="btnEnviarEnlace">
+
+                <i class="fa-regular fa-paper-plane"></i>
+
+                Enviar enlace de recuperación
+
+            </button>
+
+            <div class="mensaje-info">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                <span>
+
+                    Recibirás un correo con un enlace para crear una nueva contraseña.
+
+                </span>
+
+            </div>
+
+        </div>
+                <!-- ===================== -->
+        <!-- PASO 2 -->
+        <!-- ===================== -->
+
+        <div id="paso2" style="display:none;">
+
+            <div class="modal-icono">
+
+                <i class="fa-solid fa-envelope-circle-check"></i>
+
+            </div>
+
+            <h2>
+
+                <span>¡Enlace enviado!</span>
+
+            </h2>
+
+            <p class="modal-texto">
+
+                Hemos enviado un enlace para restablecer tu contraseña al correo institucional que ingresaste.
+
+            </p>
+
+            <div class="mensaje-info">
+
+                <i class="fa-solid fa-envelope-open-text"></i>
+
+                <span>
+
+                    Revisa tu bandeja de entrada. Si no encuentras el correo, verifica también la carpeta de spam o correo no deseado.
+
+                </span>
+
+            </div>
+
+            <button
+            class="btn-enviar"
+            id="btnEntendido">
+
+                <i class="fa-solid fa-check"></i>
+
+                Entendido
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+const togglePassword = document.getElementById("togglePassword");
+const password = document.getElementById("password");
+
+togglePassword.addEventListener("click", () => {
+
+    if (password.type === "password") {
+
+        password.type = "text";
+
+        togglePassword.classList.remove("fa-eye-slash");
+        togglePassword.classList.add("fa-eye");
+
+    } else {
+
+        password.type = "password";
+
+        togglePassword.classList.remove("fa-eye");
+        togglePassword.classList.add("fa-eye-slash");
+
+    }
+
+});
+
+</script>
+<script src="../../JS/olvide_contra.js"></script>
+
+<script src="../../JS/inicio_sesion.js"></script>
+
+</body>
+</html>

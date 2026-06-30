@@ -1,0 +1,178 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+
+}
+
+body{
+
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#f5f7fb;
+
+    overflow:hidden;
+
+}
+
+/* Fondo */
+
+.background{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+
+    radial-gradient(circle at top right,#0c9b71 0%,transparent 25%),
+
+    radial-gradient(circle at bottom left,#0a5d52 0%,transparent 30%),
+
+    #f7f8fc;
+
+}
+
+/* Tarjeta */
+
+.card{
+
+    width:540px;
+
+    background:white;
+
+    border-radius:28px;
+
+    padding:55px;
+
+    text-align:center;
+
+    box-shadow:
+
+    0 20px 60px rgba(0,0,0,.12);
+
+    animation:entrada .45s ease;
+
+}
+
+/* Icono */
+
+.icono{
+
+    width:120px;
+    height:120px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#e8f8ef;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-bottom:28px;
+
+}
+
+.icono i{
+
+    color:#16a34a;
+
+    font-size:65px;
+
+}
+
+h1{
+
+    color:#16a34a;
+
+    font-size:40px;
+
+    margin-bottom:18px;
+
+}
+
+h1 span{
+
+    color:#16a34a;
+
+}
+
+p{
+
+    color:#666;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    margin-bottom:40px;
+
+}
+
+/* Botón */
+
+.btn{
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+
+    width:100%;
+
+    text-decoration:none;
+
+    background:#16a34a;
+
+    color:white;
+
+    padding:18px;
+
+    border-radius:14px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.btn:hover{
+
+    background:#0a5d52;
+
+    transform:translateY(-2px);
+
+}
+
+@keyframes entrada{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:none;
+
+    }
+
+}

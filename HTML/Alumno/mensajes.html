@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mensajes</title>
+
+<link rel="stylesheet" href="mensajes.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="../../Assets/Logo-Utez.png" alt="">
+        </div>
+
+        <div class="user-card">
+            <img src="../../Assets/user_image.png" alt="">
+            <h2>Alumno</h2>
+            <p>3D DSM</p>
+        </div>
+
+        <nav>
+            <ul>
+
+                <li>
+                    <a href="./Alumno_inicio.html">
+                        <i class="fa-solid fa-house"></i>
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./perfil.html">
+                        <i class="fa-regular fa-user"></i>
+                        Mi perfil
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="#">
+                        <i class="fa-regular fa-message"></i>
+                        Mensajes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./tutorias.html">
+                        <i class="fa-regular fa-calendar"></i>
+                        Mis tutorías
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./historial.html">
+                        <i class="fa-regular fa-file-lines"></i>
+                        Historial
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./salir.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Salir
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </aside>
+
+    <main class="main">
+
+        <h1 class="title">Chat con Tutor</h1>
+        <p class="subtitle">Mensajería y seguimiento</p>
+
+        <div class="chat-layout">
+
+            <!-- LISTA -->
+
+            <div class="chat-list">
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Buscar conversación">
+                </div>
+
+                <div class="contact">
+                    <img src="../../Assets/user_image.png" alt="">
+
+                    <div class="contact-info">
+                        <h3>José Reyes</h3>
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+
+                    <span class="time">10:34 a.m</span>
+                </div>
+
+                <div class="contact active-contact">
+                    <img src="../../Assets/user_image.png" alt="">
+
+                    <div class="contact-info">
+                        <h3>Jonathan P</h3>
+                        <p>En un rato lo reviso, gracias</p>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <img src="../../Assets/user_image.png" alt="">
+
+                    <div class="contact-info">
+                        <h3>Tutor Gén</h3>
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CHAT -->
+
+            <div class="chat-window">
+
+                <div class="message received">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    commodo ligula eget dolo massa.
+                </div>
+
+                <div class="message sent">
+                    Uis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+                </div>
+
+                <div class="message received">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    commodo ligula eget dolo massa.
+                </div>
+
+                <div class="message sent">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean commodo ligula eget dolor.
+                </div>
+
+                <div class="chat-input">
+
+                    <input type="text" placeholder="Escribe un mensaje">
+
+                    <button class="clip-btn">
+                        <i class="fa-solid fa-paperclip"></i>
+                    </button>
+
+                    <button class="send-btn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cambiar contraseña</title>
+
+    <link rel="stylesheet" href="./cambiar_contra.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!--========================
+            PANEL IZQUIERDO
+        =========================-->
+
+        <aside class="left-panel">
+
+            <div class="overlay"></div>
+
+            <img src="../../Assets/Logo-Utez.png"
+                alt="Logo UTEZ"
+                class="logo">
+
+        </aside>
+
+        <!--========================
+            PANEL DERECHO
+        =========================-->
+
+        <main class="right-panel">
+
+            <a href="javascript:void(0);" class="back" onclick="history.back()">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Regresar
+
+            </a>
+
+            <div class="titulo">
+
+                <div class="icon-circle">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                </div>
+
+                <h1>Cambiar contraseña</h1>
+
+                <p>
+
+                    Ingresa tu contraseña actual y establece una nueva contraseña segura.
+
+                </p>
+
+            </div>
+
+            <form id="formCambio">
+
+                <!-- Contraseña actual -->
+
+                <div class="campo">
+
+                    <label>
+
+                        Contraseña actual
+
+                    </label>
+
+                    <div class="input">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            placeholder="Escribe tu contraseña actual">
+
+                        <i class="fa-solid fa-eye-slash toggle"></i>
+
+                    </div>
+
+                </div>
+
+                <!-- Nueva -->
+
+                <div class="campo">
+
+                    <label>
+
+                        Nueva contraseña
+
+                    </label>
+
+                    <div class="input">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            placeholder="Escribe tu nueva contraseña">
+
+                        <i class="fa-solid fa-eye-slash toggle"></i>
+
+                    </div>
+
+                </div>
+
+                <!-- Confirmar -->
+
+                <div class="campo">
+
+                    <label>
+
+                        Confirmar nueva contraseña
+
+                    </label>
+
+                    <div class="input">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            placeholder="Confirma tu nueva contraseña">
+
+                        <i class="fa-solid fa-eye-slash toggle"></i>
+
+                    </div>
+
+                </div>
+
+                <!-- Recomendaciones -->
+
+                <div class="tips">
+
+                    <div class="shield">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Recomendaciones</h3>
+
+                        <ul>
+
+                            <li>Mínimo 8 caracteres.</li>
+
+                            <li>Incluye mayúsculas y minúsculas.</li>
+
+                            <li>Incluye al menos un número.</li>
+
+                            <li>No reutilices contraseñas.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- Mensaje de error -->
+
+                <small
+                    id="mensajeError"
+                    style="
+                        display:none;
+                        color:#d62828;
+                        font-size:13px;
+                        font-weight:500;
+                        margin-top:10px;
+                        margin-bottom:15px;
+                    ">
+                </small>
+
+                <button>
+
+                    CAMBIAR CONTRASEÑA
+
+                </button>
+
+            </form>
+
+        </main>
+
+    </div>
+
+    <script src="../../JS/cambiar_contra.js"></script>
+
+</body>
+
+</html>

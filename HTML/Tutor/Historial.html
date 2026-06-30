@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial</title>
+
+    <link rel="stylesheet" href="Historial.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<button class="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+</button>
+
+<div class="overlay"></div>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="close-menu">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="logo">
+            <img src="../../Assets/Logo-Utez.png" alt="">
+        </div>
+
+        <div class="user-card">
+            <img src="../../Assets/user_image.png" alt="">
+            <h2>Tutor</h2>
+            <p>Docente</p>
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="./Tutor_inicio.html">
+                        <i class="fa-solid fa-house"></i>
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./Perfil_tutor.html">
+                        <i class="fa-regular fa-user"></i>
+                        Mi perfil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./mensajes.html">
+                        <i class="fa-regular fa-message"></i>
+                        Mensajes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./Tutorias.html">
+                        <i class="fa-regular fa-calendar"></i>
+                        Mis tutorías
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./Grupos.html">
+                        <i class="fa-solid fa-users"></i>
+                        Mis grupos
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="#">
+                        <i class="fa-regular fa-file-lines"></i>
+                        Historial
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./salir.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Salir
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+    <main class="main">
+
+        <section class="page">
+
+            <div class="header">
+                <h1>Historial</h1>
+                <p>Consulta tus tutorías anteriores</p>
+            </div>
+
+            <div class="summary">
+
+                <div class="card">
+                    <h2>12</h2>
+                    <span>Sesiones</span>
+                </div>
+
+                <div class="card">
+                    <h2>10</h2>
+                    <span>Asistencias</span>
+                </div>
+
+                <div class="card">
+                    <h2>6</h2>
+                    <span>Canalizaciones</span>
+                </div>
+
+                <div class="card">
+                    <h2>92%</h2>
+                    <span>Efectividad</span>
+                </div>
+
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Tipo</th>
+                            <th>Tutor</th>
+                            <th>Grupo</th>
+                            <th>Horario</th>
+                            <th>Estado</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>15/05/25</td>
+                            <td>Grupal</td>
+                            <td>Lorem Ipsum</td>
+                            <td>A02</td>
+                            <td>09:00</td>
+                            <td class="done">Realizada</td>
+                        </tr>
+
+                        <tr>
+                            <td>10/05/25</td>
+                            <td>Grupal</td>
+                            <td>Lorem Ipsum</td>
+                            <td>A01</td>
+                            <td>10:00</td>
+                            <td class="done">Realizada</td>
+                        </tr>
+
+                        <tr>
+                            <td>12/05/25</td>
+                            <td>Individual</td>
+                            <td>Lorem Ipsum</td>
+                            <td>A01</td>
+                            <td>11:00</td>
+                            <td class="cancel">Sin finalizar</td>
+                        </tr>
+
+                        <tr>
+                            <td>15/05/25</td>
+                            <td>Grupal</td>
+                            <td>Lorem Ipsum</td>
+                            <td>A02</td>
+                            <td>09:00</td>
+                            <td class="done">Realizada</td>
+                        </tr>
+
+                        <tr>
+                            <td>18/05/25</td>
+                            <td>Individual</td>
+                            <td>Lorem Ipsum</td>
+                            <td>A03</td>
+                            <td>13:00</td>
+                            <td class="done">Realizada</td>
+                        </tr>
+
+                        <tr>
+                            <td>20/05/25</td>
+                            <td>Grupal</td>
+                            <td>Lorem Ipsum</td>
+                            <td>A01</td>
+                            <td>15:00</td>
+                            <td class="done">Realizada</td>
+                        </tr>
+
+                        <tr>
+                            <td>22/05/25</td>
+                            <td>Individual</td>
+                            <td>Lorem Ipsum</td>
+                            <td>A04</td>
+                            <td>18:00</td>
+                            <td class="cancel">Sin finalizar</td>
+                        </tr>
+
+                        <tr>
+                            <td>22/05/25</td>
+                            <td>Individual</td>
+                            <td>Lorem Ipsum</td>
+                            <td>A04</td>
+                            <td>07:00</td>
+                            <td class="done">Realizada</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <div class="footer-table">
+
+                <span>Mostrando 1–8 de 12 registros</span>
+
+                <div class="pagination">
+                    <button class="current">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
