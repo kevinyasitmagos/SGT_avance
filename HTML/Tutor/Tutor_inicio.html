@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Inicio Tutor</title>
 
     <link rel="stylesheet" href="./Tutor_inicio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 
 <body>
 
 <div class="container">
-
-    <!-- SIDEBAR -->
 
     <aside class="sidebar">
 
@@ -23,7 +25,6 @@
 
         <div class="user-card">
             <img src="../../Assets/user_image.png" alt="">
-
             <h2>Tutor</h2>
             <p>Docente</p>
         </div>
@@ -87,8 +88,6 @@
 
     </aside>
 
-    <!-- CONTENIDO -->
-
     <main class="main">
 
         <div class="welcome">
@@ -104,8 +103,6 @@
 
         </div>
 
-        <!-- TARJETAS -->
-
         <div class="summary">
 
             <div class="card">
@@ -113,10 +110,8 @@
                 <i class="fa-solid fa-users"></i>
 
                 <div>
-
                     <h3>4</h3>
                     <p>Grupos asignados</p>
-
                 </div>
 
             </div>
@@ -126,23 +121,19 @@
                 <i class="fa-solid fa-user-group"></i>
 
                 <div>
-
                     <h3>102</h3>
                     <p>Alumnos</p>
-
                 </div>
 
             </div>
 
-            <div class="card">
+            <div class="card" id="abrirProximasTutor2">
 
                 <i class="fa-solid fa-calendar-days"></i>
 
                 <div>
-
                     <h3>8</h3>
                     <p>Tutorías pendientes</p>
-
                 </div>
 
             </div>
@@ -152,17 +143,13 @@
                 <i class="fa-solid fa-comments"></i>
 
                 <div>
-
                     <h3>3</h3>
                     <p>Canalizaciones</p>
-
                 </div>
 
             </div>
 
         </div>
-
-        <!-- TABLA Y AVISOS -->
 
         <div class="content">
 
@@ -170,11 +157,9 @@
 
                 <div class="title">
 
-                    <h2>
-                        📅 Próximas tutorías
-                    </h2>
+                    <h2>📅 Próximas tutorías</h2>
 
-                    <a href="#">
+                    <a href="#" id="abrirProximasTutor1">
                         Ver todas
                     </a>
 
@@ -185,12 +170,10 @@
                     <thead>
 
                         <tr>
-
                             <th>Fecha</th>
                             <th>Tipo</th>
                             <th>Grupo</th>
                             <th>Horario</th>
-
                         </tr>
 
                     </thead>
@@ -198,30 +181,24 @@
                     <tbody>
 
                         <tr>
-
                             <td>10/06/2026</td>
                             <td>Grupal</td>
                             <td>3D DSM</td>
                             <td>10:00 AM</td>
-
                         </tr>
 
                         <tr>
-
                             <td>27/06/2026</td>
                             <td>Individual</td>
                             <td>3A IRD</td>
                             <td>11:00 AM</td>
-
                         </tr>
 
                         <tr>
-
                             <td>03/07/2026</td>
                             <td>Grupal</td>
                             <td>2B DSM</td>
                             <td>01:00 PM</td>
-
                         </tr>
 
                     </tbody>
@@ -230,17 +207,13 @@
 
             </div>
 
-            <!-- AVISOS -->
-
             <div class="notice-box">
 
                 <div class="title">
 
-                    <h2>
-                        ⚠ Avisos
-                    </h2>
+                    <h2>⚠ Avisos</h2>
 
-                    <a href="#">
+                    <a href="#" id="abrirAvisosTutor1">
                         Ver todas
                     </a>
 
@@ -290,55 +263,366 @@
 
         </div>
 
-        <!-- BOTONES -->
+                <div class="quick-access">
 
-        <div class="quick-access">
+    <a href="./Tutorias.html">
 
-            <button>
+        <button type="button">
 
-                <i class="fa-solid fa-calendar-check"></i>
+            <i class="fa-solid fa-calendar-check"></i>
 
-                Mis tutorías
+            Mis tutorías
 
-            </button>
+        </button>
 
-            <button>
+    </a>
 
-                <i class="fa-solid fa-clock-rotate-left"></i>
+    <a href="./Historial.html">
 
-                Historial
+        <button type="button">
 
-            </button>
+            <i class="fa-solid fa-clock-rotate-left"></i>
 
-            <button>
+            Historial
 
-                <i class="fa-solid fa-user"></i>
+        </button>
 
-                Mi perfil
+    </a>
 
-            </button>
+    <a href="./Perfil_tutor.html">
 
-            <button>
+        <button type="button">
 
-                <i class="fa-solid fa-users"></i>
+            <i class="fa-solid fa-user"></i>
 
-                Mis grupos
+            Mi perfil
 
-            </button>
+        </button>
 
-            <button>
+    </a>
 
-                <i class="fa-solid fa-circle-exclamation"></i>
+    <a href="./Grupos.html">
 
-                Avisos
+        <button type="button">
+
+            <i class="fa-solid fa-users"></i>
+
+            Mis grupos
+
+        </button>
+
+    </a>
+
+    <button type="button" id="abrirAvisosTutor2">
+
+        <i class="fa-solid fa-circle-exclamation"></i>
+
+        Avisos
+
+    </button>
+
+</div>
+    </main>
+
+</div>
+
+<div class="modal-overlay" id="modalAvisosTutor">
+
+    <div class="modal">
+
+        <div class="modal-header">
+
+            <div class="modal-title">
+
+                <i class="fa-solid fa-triangle-exclamation"></i>
+
+                <h2>Avisos</h2>
+
+            </div>
+
+            <button class="cerrar-modal" id="cerrarAvisosTutor">
+
+                <i class="fa-solid fa-xmark"></i>
 
             </button>
 
         </div>
 
-    </main>
+        <div class="modal-body">
+
+            <div class="aviso-item">
+
+                <div class="icono-aviso">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+
+                <div class="info-aviso">
+
+                    <h3>Reunión de tutores</h3>
+
+                    <p>
+                        Se convoca a todos los tutores a la reunión mensual para revisar el avance de las tutorías.
+                    </p>
+
+                </div>
+
+                <div class="fecha-aviso">
+                    15/06/2026
+                </div>
+
+            </div>
+
+            <div class="aviso-item">
+
+                <div class="icono-aviso">
+                    <i class="fa-solid fa-file-pen"></i>
+                </div>
+
+                <div class="info-aviso">
+
+                    <h3>Actualizar reportes</h3>
+
+                    <p>
+                        Recuerda actualizar los reportes pendientes antes de la fecha límite.
+                    </p>
+
+                </div>
+
+                <div class="fecha-aviso">
+                    18/06/2026
+                </div>
+
+            </div>
+
+            <div class="aviso-item">
+
+                <div class="icono-aviso">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+
+                <div class="info-aviso">
+
+                    <h3>Nueva canalización</h3>
+
+                    <p>
+                        Se ha registrado una nueva canalización que requiere seguimiento.
+                    </p>
+
+                </div>
+
+                <div class="fecha-aviso">
+                    22/06/2026
+                </div>
+
+            </div>
+
+            <div class="aviso-item">
+
+                <div class="icono-aviso">
+                    <i class="fa-solid fa-calendar-check"></i>
+                </div>
+
+                <div class="info-aviso">
+
+                    <h3>Tutoría programada</h3>
+
+                    <p>
+                        Se asignó una nueva tutoría individual para esta semana.
+                    </p>
+
+                </div>
+
+                <div class="fecha-aviso">
+                    25/06/2026
+                </div>
+
+            </div>
+
+            <div class="aviso-item">
+
+                <div class="icono-aviso">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+
+                <div class="info-aviso">
+
+                    <h3>Actualización del sistema</h3>
+
+                    <p>
+                        El Sistema de Gestión de Tutorías recibió mejoras en el módulo de reportes.
+                    </p>
+
+                </div>
+
+                <div class="fecha-aviso">
+                    30/06/2026
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="modal-footer">
+
+            <button id="btnCerrarAvisosTutor">
+                Cerrar
+            </button>
+
+        </div>
+
+    </div>
 
 </div>
 
+<div class="modal-overlay" id="modalProximasTutor">
+
+    <div class="modal modal-proximas">
+
+        <div class="modal-header">
+
+            <div class="modal-title">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                <div>
+
+                    <h2>Próximas tutorías</h2>
+
+                    <p>
+                        Estas son las tutorías que tienes programadas próximamente.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <button class="cerrar-modal" id="cerrarProximasTutor">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <div class="tabla-proximas">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Tipo</th>
+                        <th>Grupo</th>
+                        <th>Horario</th>
+                        <th>Estado</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>10/06/2026</td>
+
+                        <td>
+                            <span class="tipo grupal">Grupal</span>
+                        </td>
+
+                        <td>3D DSM</td>
+
+                        <td>10:00 AM</td>
+
+                        <td>
+                            <span class="estado pendiente">Pendiente</span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>27/06/2026</td>
+
+                        <td>
+                            <span class="tipo individual">Individual</span>
+                        </td>
+
+                        <td>3A IRD</td>
+
+                        <td>11:00 AM</td>
+
+                        <td>
+                            <span class="estado pendiente">Pendiente</span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>03/07/2026</td>
+
+                        <td>
+                            <span class="tipo grupal">Grupal</span>
+                        </td>
+
+                        <td>2B DSM</td>
+
+                        <td>01:00 PM</td>
+
+                        <td>
+                            <span class="estado pendiente">Pendiente</span>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="proximas-footer">
+
+            <div class="recordatorio">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                Solo se muestran las tutorías con estado
+                <strong>Pendiente.</strong>
+
+            </div>
+
+            <div class="botones-proximas">
+
+                <a href="./Tutorias.html">
+
+                    <button>
+
+                        <i class="fa-solid fa-calendar-check"></i>
+
+                        Ir a Mis tutorías
+
+                    </button>
+
+                </a>
+
+                <button id="btnCerrarProximasTutor">
+
+                    Cerrar
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../../JS/Inicio_tutor.js"></script>
+
 </body>
+
 </html>

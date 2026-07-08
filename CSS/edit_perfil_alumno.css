@@ -1,0 +1,329 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background-image:url("../../Assets/Fondo-login.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    min-height:100vh;
+}
+
+/*=========================
+        CONTENEDOR
+=========================*/
+
+.container{
+    width:100%;
+    min-height:100vh;
+    padding:40px;
+}
+
+.main{
+    max-width:1200px;
+    margin:auto;
+}
+
+/*=========================
+        HEADER
+=========================*/
+
+.back-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    color:#00824d;
+    font-weight:600;
+    margin-bottom:25px;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    transform:translateX(-5px);
+    color:#0d6d45;
+}
+
+h1{
+    font-size:40px;
+    color:#111;
+    margin-bottom:8px;
+}
+
+.subtitle{
+    color:#666;
+    font-size:17px;
+    margin-bottom:20px;
+}
+
+/*=========================
+        NOTA
+=========================*/
+
+.notice{
+    display:flex;
+    gap:15px;
+    align-items:flex-start;
+    background:#eefaf4;
+    color:#0d6d45;
+    border-left:5px solid #00824d;
+    padding:18px 22px;
+    border-radius:14px;
+    margin-bottom:30px;
+}
+
+/*=========================
+        CARD
+=========================*/
+
+.edit-card{
+    background:#fff;
+    border-radius:22px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    display:grid;
+    grid-template-columns:300px 1fr;
+    overflow:hidden;
+}
+
+/*=========================
+        FOTO
+=========================*/
+
+.photo-section{
+    background:#f7faf8;
+    border-right:1px solid #ececec;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:45px 30px;
+}
+
+.photo{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    overflow:hidden;
+    position:relative;
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.3s;
+}
+
+.photo:hover img{
+    transform:scale(1.08);
+}
+
+.camera{
+    position:absolute;
+    inset:0;
+    border:none;
+    background:rgba(0,0,0,.45);
+    color:#fff;
+    opacity:0;
+    transition:.3s;
+    cursor:pointer;
+    font-size:30px;
+}
+
+.photo:hover .camera{
+    opacity:1;
+}
+
+.change-photo{
+    margin-top:30px;
+    border:none;
+    background:#00824d;
+    color:#fff;
+    padding:14px 24px;
+    border-radius:14px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/*=========================
+      FORMULARIO BASE
+=========================*/
+
+.form-section{
+    padding:40px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/* SECCIONES */
+
+.section-title{
+    font-size:22px;
+    font-weight:700;
+    color:#00824d;
+    margin-top:10px;
+    padding-bottom:10px;
+    border-bottom:2px solid #f1f1f1;
+}
+
+/*=========================
+      INPUTS (CLAVE)
+=========================*/
+
+.input-group{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.input-group label{
+    font-size:15px;
+    font-weight:600;
+    color:#555;
+}
+
+.input-group input{
+    width:100%;
+    height:55px;
+    border:2px solid #e5e5e5;
+    border-radius:14px;
+    padding:0 18px;
+    font-size:15px;
+    outline:none;
+    background:#fff;
+    transition:.3s;
+    display:block;
+}
+
+.input-group input:focus{
+    border-color:#00824d;
+    box-shadow:0 0 0 4px rgba(0,130,77,.12);
+}
+
+.input-group input:disabled{
+    background:#f3f3f3;
+    color:#888;
+    opacity:1;
+}
+
+/*=========================
+        BOTONES
+=========================*/
+
+.buttons{
+    display:flex;
+    justify-content:flex-end;
+    gap:16px;
+    margin-top:10px;
+}
+
+.buttons button{
+    border:none;
+    border-radius:14px;
+    padding:15px 28px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    transition:.3s;
+}
+
+.cancel{
+    background:#ececec;
+    color:#333;
+}
+
+.cancel:hover{
+    background:#dddddd;
+    transform:translateY(-3px);
+}
+
+.save{
+    background:#00824d;
+    color:#fff;
+}
+
+.save:hover{
+    background:#0d6d45;
+    transform:translateY(-3px);
+}
+
+/*=========================
+        TOAST
+=========================*/
+
+.toast{
+    position:fixed;
+    top:30px;
+    right:30px;
+    background:#fff;
+    border-left:6px solid #00824d;
+    padding:18px 24px;
+    border-radius:16px;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+    transform:translateX(420px);
+    opacity:0;
+    transition:.35s;
+    z-index:999;
+}
+
+.toast.show{
+    transform:translateX(0);
+    opacity:1;
+}
+
+/*=========================
+        RESPONSIVE
+=========================*/
+
+@media(max-width:950px){
+
+    .container{
+        padding:25px;
+    }
+
+    .edit-card{
+        grid-template-columns:1fr;
+    }
+
+    .photo-section{
+        border-right:none;
+        border-bottom:1px solid #ececec;
+    }
+}
+
+@media(max-width:600px){
+
+    h1{
+        font-size:30px;
+    }
+
+    .form-section{
+        padding:22px;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+
+    .buttons button{
+        width:100%;
+        justify-content:center;
+    }
+
+    .photo{
+        width:150px;
+        height:150px;
+    }
+}

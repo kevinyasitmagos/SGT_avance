@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Inicio Alumno</title>
 
 <link rel="stylesheet" href="Inicio_alumno.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
+
 <body>
 
 <div class="container">
@@ -63,13 +67,13 @@
                 </div>
             </div>
 
-            <div class="card">
-                <i class="fa-solid fa-calendar-days"></i>
-                <div>
-                    <h3>0</h3>
-                    <p>Próximas tutorías</p>
-                </div>
-            </div>
+            <div class="card" id="abrirProximas2">
+    <i class="fa-solid fa-calendar-days"></i>
+    <div>
+        <h3>0</h3>
+        <p>Próximas tutorías</p>
+    </div>
+</div>
 
             <div class="card">
                 <i class="fa-solid fa-comments"></i>
@@ -86,8 +90,8 @@
             <div class="table-box">
 
                 <div class="title">
-                    <h2>📅 Próximas tutorías</h2>
-                    <a href="#">Ver todas</a>
+                   <h2>📅 Próximas tutorías</h2>
+                    <a href="#" id="abrirProximas1">Ver todas</a>
                 </div>
 
                 <table>
@@ -132,10 +136,11 @@
 
                 <div class="title">
                     <h2>⚠ Avisos</h2>
-                    <a href="#">Ver todas</a>
+                    <a href="#" id="abrirAvisos1">Ver todas</a>
                 </div>
 
                 <ul class="notice-list">
+
                     <li>
                         <strong>Recordar asistir a tutoría grupal</strong>
                         <small>10/06/2026</small>
@@ -150,6 +155,7 @@
                         <strong>Cambio de horario</strong>
                         <small>25/06/2026</small>
                     </li>
+
                 </ul>
 
             </div>
@@ -158,31 +164,340 @@
 
         <div class="quick-access">
 
-            <button>
-                <i class="fa-solid fa-book"></i>
-                Mis tutorías
-            </button>
+            <a href="./tutorias.html">
+                <button>
+                    <i class="fa-solid fa-book"></i>
+                    Mis tutorías
+                </button>
+            </a>
 
-            <button>
-                <i class="fa-solid fa-file-lines"></i>
-                Historial
-            </button>
+            <a href="./historial.html">
+                <button>
+                    <i class="fa-solid fa-file-lines"></i>
+                    Historial
+                </button>
+            </a>
 
-            <button>
-                <i class="fa-solid fa-user"></i>
-                Mi perfil
-            </button>
+            <a href="./perfil.html">
+                <button>
+                    <i class="fa-solid fa-user"></i>
+                    Mi perfil
+                </button>
+            </a>
 
-            <button>
-                <i class="fa-solid fa-circle-question"></i>
-                Avisos
-            </button>
+            <a href="#" id="abrirAvisos2">
+                <button type="button">
+                    <i class="fa-solid fa-circle-question"></i>
+                    Avisos
+                </button>
+            </a>
 
         </div>
 
     </main>
 
 </div>
+
+<div class="modal-overlay" id="modalAvisos">
+
+    <div class="modal">
+
+        <div class="modal-header">
+
+            <div class="modal-title">
+                <i class="fa-solid fa-bullhorn"></i>
+                <h2>Avisos</h2>
+            </div>
+
+            <button class="cerrar-modal" id="cerrarModal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+        <div class="modal-body">
+
+            <div class="aviso-item">
+
+                <div class="icono-aviso">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+
+                <div class="info-aviso">
+
+                    <h3>Recordar asistir a tutoría grupal</h3>
+
+                    <p>
+                        No olvides asistir a tu tutoría grupal programada.
+                    </p>
+
+                </div>
+
+                <div class="fecha-aviso">
+                    10/06/2026
+                </div>
+
+            </div>
+
+            <div class="aviso-item">
+
+                <div class="icono-aviso">
+                    <i class="fa-regular fa-file-lines"></i>
+                </div>
+
+                <div class="info-aviso">
+
+                    <h3>Entrega de actividad</h3>
+
+                    <p>
+                        Se habilitó una nueva actividad para entregar esta semana.
+                    </p>
+
+                </div>
+
+                <div class="fecha-aviso">
+                    12/06/2026
+                </div>
+
+            </div>
+
+            <div class="aviso-item">
+
+                <div class="icono-aviso">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+
+                <div class="info-aviso">
+
+                    <h3>Cambio de horario</h3>
+
+                    <p>
+                        La tutoría individual cambia al horario de las 09:00 AM.
+                    </p>
+
+                </div>
+
+                <div class="fecha-aviso">
+                    25/06/2026
+                </div>
+
+            </div>
+
+                        <div class="aviso-item">
+
+                <div class="icono-aviso">
+                    <i class="fa-solid fa-calendar-check"></i>
+                </div>
+
+                <div class="info-aviso">
+
+                    <h3>Nueva tutoría programada</h3>
+
+                    <p>
+                        Ya puedes consultar la fecha y hora de tu próxima tutoría desde el apartado "Mis tutorías".
+                    </p>
+
+                </div>
+
+                <div class="fecha-aviso">
+                    30/06/2026
+                </div>
+
+            </div>
+
+            <div class="aviso-item">
+
+                <div class="icono-aviso">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+
+                <div class="info-aviso">
+
+                    <h3>Actualización del sistema</h3>
+
+                    <p>
+                        Se agregaron nuevas funciones al Sistema de Gestión de Tutorías para mejorar tu experiencia.
+                    </p>
+
+                </div>
+
+                <div class="fecha-aviso">
+                    01/07/2026
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="modal-footer">
+
+            <button id="btnCerrarModal">
+                Cerrar
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="modal-overlay" id="modalProximas">
+
+    <div class="modal modal-proximas">
+
+        <div class="modal-header">
+
+            <div class="modal-title">
+                <i class="fa-solid fa-calendar-check"></i>
+                <div>
+                    <h2>Próximas tutorías</h2>
+                    <p>Estas son las tutorías que tienes programadas próximamente.</p>
+                </div>
+            </div>
+
+            <button class="cerrar-modal" id="cerrarProximas">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+        <div class="tabla-proximas">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Tipo</th>
+                        <th>Grupo</th>
+                        <th>Tutor</th>
+                        <th>Hora</th>
+                        <th>Estado</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>10/06/2026</td>
+
+                        <td>
+                            <span class="tipo grupal">
+                                Grupal
+                            </span>
+                        </td>
+
+                        <td>3D DSM</td>
+
+                        <td>José Reyes</td>
+
+                        <td>10:00 AM</td>
+
+                        <td>
+                            <span class="estado pendiente">
+                                Pendiente
+                            </span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>27/06/2026</td>
+
+                        <td>
+                            <span class="tipo individual">
+                                Individual
+                            </span>
+                        </td>
+
+                        <td>3D DSM</td>
+
+                        <td>Ana López</td>
+
+                        <td>11:00 AM</td>
+
+                        <td>
+                            <span class="estado pendiente">
+                                Pendiente
+                            </span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>03/07/2026</td>
+
+                        <td>
+                            <span class="tipo grupal">
+                                Grupal
+                            </span>
+                        </td>
+
+                        <td>3A IRD</td>
+
+                        <td>Jonathan Pérez</td>
+
+                        <td>01:00 PM</td>
+
+                        <td>
+                            <span class="estado pendiente">
+                                Pendiente
+                            </span>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="proximas-footer">
+
+            <div class="recordatorio">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                Solo se muestran las tutorías con estado
+                <strong>Pendiente.</strong>
+
+            </div>
+
+            <div class="botones-proximas">
+
+                <a href="./tutorias.html">
+
+                    <button>
+
+                        <i class="fa-solid fa-book"></i>
+
+                        Ir a Mis tutorías
+
+                    </button>
+
+                </a>
+
+                <button id="btnCerrarProximas">
+
+                    Cerrar
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../../JS/Inicio_alumno.js"></script>
 
 </body>
 </html>

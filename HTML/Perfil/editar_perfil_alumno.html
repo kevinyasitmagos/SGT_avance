@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Editar Perfil</title>
+
+    <link rel="stylesheet" href="../../CSS/edit_perfil_alumno.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <main class="main">
+
+            <a href="../../HTML/Alumno/perfil.html" class="back-btn">
+
+                <i class="fa-solid fa-arrow-left"></i>
+                Volver a Mi Perfil
+
+            </a>
+
+            <h1>Editar Perfil</h1>
+
+            <p class="subtitle">
+                Actualiza tu información
+            </p>
+
+            <div class="notice">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                <span>
+                    Por seguridad, los datos institucionales no pueden modificarse.
+                    Solo puedes actualizar tu fotografía y número telefónico.
+                </span>
+
+            </div>
+
+            <div class="edit-card">
+
+                <!-- FOTO -->
+                <div class="photo-section">
+
+                    <div class="photo">
+
+                        <img src="../../../Assets/user_image.png" alt="Foto de perfil">
+
+                        <button class="camera">
+                            <i class="fa-solid fa-camera"></i>
+                        </button>
+
+                    </div>
+
+                    <button class="change-photo">
+                        <i class="fa-solid fa-image"></i>
+                        Cambiar foto
+                    </button>
+
+                </div>
+
+                <!-- FORMULARIO -->
+                <div class="form-section">
+
+                    <h2 class="section-title">Información personal</h2>
+
+                    <div class="input-group">
+                        <label>Nombre completo</label>
+                        <input type="text" value="Alumno Genérico" disabled>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Correo institucional</label>
+                        <input type="email" value="alumno@utez.edu.mx" disabled>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Número telefónico</label>
+                        <input type="tel" value="777 123 4567">
+                    </div>
+
+                    <h2 class="section-title">Información académica</h2>
+
+                    <div class="input-group">
+                        <label>Matrícula</label>
+                        <input type="text" value="20253DSM000" disabled>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Carrera</label>
+                        <input type="text" value="Desarrollo de Software Multiplataforma" disabled>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Grado y Grupo</label>
+                        <input type="text" value="3D DSM" disabled>
+                    </div>
+
+                    <!-- BOTONES -->
+                    <div class="buttons">
+
+                        <button class="cancel"
+                            onclick="window.location.href='../../HTML/Alumno/perfil.html'">
+
+                            <i class="fa-solid fa-xmark"></i>
+                            Cancelar
+
+                        </button>
+
+                        <button class="save" id="guardarCambios">
+
+                            <i class="fa-regular fa-floppy-disk"></i>
+                            Guardar cambios
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <span>
+            Perfil actualizado correctamente.
+        </span>
+
+    </div>
+
+    <script src="../../JS/edit_perfil_alumno.js"></script>
+
+</body>
+
+</html>

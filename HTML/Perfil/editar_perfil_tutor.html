@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Editar perfil - Tutor</title>
+
+    <link rel="stylesheet" href="../../CSS/edit_perfil_tutor.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <main class="main">
+
+        <a href="../Tutor/Perfil_tutor.html" class="back-btn">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            Regresar al perfil
+
+        </a>
+
+        <h1>Editar perfil</h1>
+
+        <p class="subtitle">
+            Actualiza tu información
+        </p>
+
+        <div class="notice">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            <span>
+                Por seguridad, los datos institucionales no pueden modificarse.
+                Solo puedes actualizar tu fotografía y número telefónico.
+            </span>
+
+        </div>
+
+        <div class="edit-card">
+
+            <div class="photo-section">
+
+                <div class="photo">
+
+                    <img src="../../Assets/user_image.png" alt="Foto de perfil">
+
+                    <button class="camera">
+
+                        <i class="fa-solid fa-camera"></i>
+
+                    </button>
+
+                </div>
+
+                <button class="change-photo">
+
+                    <i class="fa-solid fa-image"></i>
+
+                    Cambiar fotografía
+
+                </button>
+
+            </div>
+
+            <div class="form-section">
+
+                <h2 class="section-title">
+                    Información personal
+                </h2>
+
+                <div class="input-group">
+
+    <label>Nombre completo</label>
+
+    <input type="text" value="Tutor Genérico" disabled>
+
+</div>
+
+<div class="input-group">
+
+    <label>Correo institucional</label>
+
+    <input type="email" value="20253DS000@utez.edu.mx" disabled>
+
+</div>
+
+<div class="input-group">
+
+    <label>Número de colaborador</label>
+
+    <input type="text" value="T20260015" disabled>
+
+</div>
+
+<div class="input-group">
+
+    <label>Programa educativo</label>
+
+    <input type="text" value="Desarrollo de Software Multiplataforma" disabled>
+
+</div>
+
+<div class="input-group">
+
+    <label>Teléfono</label>
+
+    <input type="tel" value="777 144 5262">
+
+    <small>
+        Este es el único dato que puedes modificar.
+    </small>
+
+</div>
+
+<div class="buttons">
+
+    <button class="cancel" onclick="location.href='../Tutor/Perfil_tutor.html'">
+
+        <i class="fa-solid fa-xmark"></i>
+
+        Cancelar
+
+    </button>
+
+    <button class="save" id="guardarCambios">
+
+        <i class="fa-solid fa-floppy-disk"></i>
+
+        Guardar cambios
+
+    </button>
+
+</div>
+
+            </div>
+
+        </div>
+
+        <div class="toast" id="toast">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <span>
+        Cambios guardados correctamente.
+    </span>
+
+</div>
+
+<script src="../../JS/edit_perfil_tutor.js"></script>
+
+</body>
+
+</html>
